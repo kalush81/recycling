@@ -41,8 +41,8 @@ body {
 }
 .my-carousel{
   min-height: auto;
-  font-size: 2rem;
-  max-width: 80%;
+  /* font-size: 2rem;
+  max-width: 80%; */
   /* border: 2px solid red; */
   text-align: center;
   margin-top: 20px;
@@ -69,11 +69,25 @@ body {
 
  p {
    background-color: rgba(0, 0, 0, 0.65);
-   padding: 35px;
    border-radius: 15px;
  }
 
- .text-is-readable {
-  line-height: 2.8rem;
-   letter-spacing: 2px;
+ @media (min-width: 648px) { 
+   .my-carousel {
+     font-size: 2rem;
+     max-width: 80%;
+   }
+   .text-is-readable {
+     line-height: 2.6rem;
+     letter-spacing: 1.5px;
+   }
+   p {
+     padding: 35px;
+   }
+ }
+
+ @media (max-width: 500px) {
+  iframe.youtube {
+    width: 364px;
+  }
  }

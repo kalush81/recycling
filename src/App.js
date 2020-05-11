@@ -22,7 +22,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <Header />  
-        <YouTube videoId="-dbWWEVl0tA" opts={opts} onReady={this._onReady} />
+        <YouTube className='youtube' videoId="-dbWWEVl0tA" opts={opts} onReady={this._onReady} />
         <SliderHeader />
         <MyCarousel />
         <MyHr />
