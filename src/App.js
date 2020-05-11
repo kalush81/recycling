@@ -1,26 +1,37 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import YouTube from 'react-youtube';
+import MyCarousel from './MyCarousel'
+import SliderHeader from './SliderHeader';
+import Header from './Header';
+import MainText from './MainText';
+import MyHr from './myHr';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 0,
+      },
+    };
+ 
+    return (
+      <div className='App'>
+        <Header />  
+        <YouTube videoId="-dbWWEVl0tA" opts={opts} onReady={this._onReady} />
+        <SliderHeader />
+        <MyCarousel />
+        <MyHr />
+        <MainText />
+      </div>
+    )
+    
+  }
+  
 }
 
 export default App;
