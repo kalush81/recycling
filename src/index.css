@@ -19,3 +19,7 @@ code {
 button {
   text-shadow: black;
 }
+
+.slider-frame {
+  background-color: rgba(0,0,0, 0.5);
+}
