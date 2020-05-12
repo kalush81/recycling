@@ -3,7 +3,7 @@ import React from "react";
 export default function MainText() {
   return (
     <div className="my-carousel">
-      <p className='text-is-readable main'>
+      <p className='main'>
         Recykling to nie segregacja. Recykling to powtórne wykorzystanie
         odpadów, które może zaczynać się od segregacji. Ideą wiodącą recyklingu
         jest oczywiście ochrona środowiska. Jego celem jest ograniczenie zużycia
